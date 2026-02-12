@@ -13,7 +13,7 @@ header {
 }
 
 .logo img {
-    width: 150px;
+    width: 100px;
 }
 
 h1 {
@@ -70,4 +70,8 @@ h2 {
     border-radius: 5px;
     cursor: pointer;
     margin-top: 20px;
+}
+
+.recommendation-container i {
+    margin-right: 10px;
 }
