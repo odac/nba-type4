@@ -78,7 +78,9 @@ document.addEventListener('DOMContentLoaded', () => {
             <h2>${customer.name}</h2>
             <p><strong>Company Size:</strong> ${customer.profile.size}</p>
             <h3>Revenue</h3>
-            <canvas id="revenueChart"></canvas>
+            <div class="chart-container">
+                <canvas id="revenueChart"></canvas>
+            </div>
             <h3>Recent Transactions</h3>
             <ul>
                 ${customer.profile.transactions.map(t => `<li>${t}</li>`).join('')}
@@ -105,6 +107,8 @@ document.addEventListener('DOMContentLoaded', () => {
             type: 'bar',
             data: revenueData,
             options: {
+                responsive: true,
+                maintainAspectRatio: false,
                 scales: {
                     y: {
                         beginAtZero: true

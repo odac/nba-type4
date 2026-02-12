@@ -72,8 +72,10 @@ h2 {
     margin-top: 20px;
 }
 
-#revenueChart {
-    max-width: 50%;
+.chart-container {
+    position: relative;
+    width: 100%;
+    height: 50vh;
 }
 
 .recommendation-container .fa-lightbulb {
