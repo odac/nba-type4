@@ -97,8 +97,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     parseInt(customer.profile.revenue['2022'].replace('$','').replace('M','')),
                     parseInt(customer.profile.revenue['2023'].replace('$','').replace('M',''))
                 ],
-                backgroundColor: 'rgba(217, 35, 45, 0.2)',
-                borderColor: 'rgba(217, 35, 45, 1)',
+                backgroundColor: 'rgba(128, 0, 0, 0.2)',
+                borderColor: 'rgba(128, 0, 0, 1)',
                 borderWidth: 1
             }]
         };
@@ -143,6 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <h2>Next Best Action</h2>
             <p><i class="fas fa-lightbulb"></i><strong>Recommendation:</strong> ${nextBestAction}</p>
             <p><i class="fas fa-comments"></i><strong>Conversation Starter:</strong> ${conversationStarter}</p>
+            <p><i class="fas fa-chart-line"></i><strong>Market Trends:</strong> ${customer.marketTrends}</p>
         `;
     }
 });

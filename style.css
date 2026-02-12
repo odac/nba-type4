@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: #d9232d;
+    background-color: #800000;
     color: white;
     padding: 20px;
     text-align: center;
@@ -39,7 +39,7 @@ main {
 
 #searchButton {
     padding: 10px 20px;
-    background-color: #d9232d;
+    background-color: #800000;
     color: white;
     border: none;
     border-radius: 5px;
@@ -55,7 +55,7 @@ main {
 }
 
 h2 {
-    color: #d9232d;
+    color: #800000;
 }
 
 .hidden {
@@ -64,7 +64,7 @@ h2 {
 
 #generateButton {
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #800000;
     color: white;
     border: none;
     border-radius: 5px;
@@ -84,4 +84,8 @@ h2 {
 
 .recommendation-container .fa-comments {
     color: #007bff;
+}
+
+.recommendation-container .fa-chart-line {
+    color: #4CAF50;
 }

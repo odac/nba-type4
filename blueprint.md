@@ -1,41 +1,34 @@
-
-# AI-Powered Sales Recommendation Tool
+# Blueprint: AI-Powered Sales Recommendation Tool
 
 ## Overview
 
-This project is an interactive website for bank Relationship Managers (RMs) to receive AI-powered recommendations for the next best products to sell to corporate customers. The tool also generates conversation starters by analyzing customer data and market trends.
-
-## Features
-
-*   **Customer Search:** RMs can search for corporate customers by name.
-*   **Customer Profile:** The tool displays a detailed profile for each customer, including:
-    *   Company Name
-    *   Company Size
-    *   Revenue (last 3 years) with a visual chart.
-    *   Recent Transactions
-*   **AI Recommendations:** A "Generate Next Best Action" button provides:
-    *   Recommended products to pitch with an icon.
-    *   A conversation starter based on the customer's activity and market trends with an icon.
-
-## Design
-
-*   **Theme:** Sleek and modern, adhering to the DBS Bank color theme (red and black).
-*   **Layout:** Clean and intuitive, with a focus on user experience.
-*   **Typography:** Clear and legible, with a professional tone.
-*   **Iconography:** Using Font Awesome for clear visual cues.
+This web application provides an AI-powered sales recommendation tool for relationship managers. It allows users to search for customers, view their profiles, and generate a "Next Best Action" based on their data and relevant market trends.
 
 ## Project Structure
 
-*   `index.html`: The main HTML file.
-*   `style.css`: The CSS file for styling.
-*   `main.js`: The JavaScript file for application logic and data.
-*   `pics/logo.png`: The DBS logo image.
-*   `blueprint.md`: This file, outlining the project.
+*   `index.html`: Main HTML file.
+*   `style.css`: CSS for styling.
+*   `main.js`: JavaScript for application logic.
+*   `pics/`: Directory for images.
+
+## Style, Design, and Features
+
+### Version 1.0
+
+*   **Customer Search:** Search for customers by name.
+*   **Customer Profile:** View customer details, including company size, revenue, and recent transactions.
+*   **Revenue Chart:** Bar chart visualizing the customer's revenue over the last three years.
+*   **Next Best Action:** Generate a personalized recommendation and conversation starter for the selected customer.
+*   **Responsive Design:** The application is designed to be responsive and work on different screen sizes.
+*   **Color Scheme:** The application uses a maroon and white color scheme.
+*   **Icons:** The application uses Font Awesome icons to enhance the user experience.
+*   **Logo:** The application displays the company logo in the header.
+
+### Version 1.1
+
+*   **Market Trends:** The "Next Best Action" feature now includes relevant market trends to provide additional context for the recommendation.
 
 ## Current Plan
 
-1.  **Update Logo:** Change the logo to use an image from the `pics` folder.
-2.  **Add Charts:** Incorporate Chart.js to display a revenue graph for each customer.
-3.  **Add Icons:** Use Font Awesome to add icons to the recommendation and conversation starter sections.
-4.  **Refine Styles:** Adjust CSS for the new elements to ensure a cohesive design.
-5.  **Review and Refine:** Test the application thoroughly and make any necessary improvements.
+*   **Update Color Scheme:** Change the header and button colors to maroon.
+*   **Enhance Recommendations:** Modify the "Next Best Action" section to dynamically include relevant market trends.
