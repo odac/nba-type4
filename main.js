@@ -143,7 +143,27 @@ document.addEventListener('DOMContentLoaded', () => {
             <h2>Next Best Action</h2>
             <p><i class="fas fa-lightbulb"></i><strong>Recommendation:</strong> ${nextBestAction}</p>
             <p><i class="fas fa-comments"></i><strong>Conversation Starter:</strong> ${conversationStarter}</p>
-            <p><i class="fas fa-chart-line"></i><strong>Market Trends:</strong> ${customer.marketTrends}</p>
+            <p><i class="fas fa-chart-line"></i><strong>Market Trends:</strong> ${customer.marketTrends} <button id="generateReportButton" class="small-button">Generate Full Report</button></p>
+            <div id="fullReportContainer"></div>
         `;
+
+        document.getElementById('generateReportButton').addEventListener('click', () => {
+            generateFullReport(customer);
+        });
+    }
+
+    function generateFullReport(customer) {
+        const fullReportContainer = document.getElementById('fullReportContainer');
+        let fullReport = `<h3>Full Market Trend Report for ${customer.name}</h3>`;
+
+        if (customer.name === 'Innovate Corp') {
+            fullReport += `<p>The renewable energy sector is experiencing exponential growth, driven by global initiatives to combat climate change. Key trends include advancements in solar and wind technology, increased investment in energy storage solutions, and a growing demand for corporate Power Purchase Agreements (PPAs). For Innovate Corp, this presents a significant opportunity to secure long-term financing for large-scale renewable energy projects. Our Green Financing products are specifically designed to support such initiatives, offering competitive rates and flexible terms that align with the long-term nature of these investments.</p>`;
+        } else if (customer.name === 'Tech Solutions Ltd.') {
+            fullReport += `<p>The cybersecurity landscape is rapidly evolving, with an increasing frequency and sophistication of cyberattacks. Key trends include the rise of ransomware-as-a-service, attacks on cloud infrastructure, and the use of AI in both offensive and defensive security measures. For Tech Solutions Ltd., this underscores the critical need for comprehensive protection. Our cybersecurity insurance goes beyond standard coverage, offering protection against business interruption, data recovery costs, and reputational damage. It\'s an essential component of a robust risk management strategy for any company operating in the digital space.</p>`;
+        } else if (customer.name === 'Global Exports Inc.') {
+            fullReport += `<p>Global supply chains are under unprecedented pressure, facing challenges from geopolitical instability, trade disputes, and logistical bottlenecks. Key trends include a shift towards supply chain regionalization, increased adoption of digital supply chain technologies for better visibility and traceability, and a greater emphasis on supplier diversification. For Global Exports Inc., our trade finance platform offers a powerful solution to navigate this complex environment. It provides real-time tracking of shipments, facilitates seamless collaboration with suppliers, and offers innovative financing options to mitigate the risks of cross-border trade.</p>`;
+        }
+
+        fullReportContainer.innerHTML = fullReport;
     }
 });

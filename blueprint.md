@@ -28,7 +28,12 @@ This web application provides an AI-powered sales recommendation tool for relati
 
 *   **Market Trends:** The "Next Best Action" feature now includes relevant market trends to provide additional context for the recommendation.
 
+### Version 1.2
+
+*   **Full Market Trend Report:** A "Generate Full Report" button is available in the "Market Trends" section, allowing users to generate a detailed report on the market trends relevant to the selected customer.
+
 ## Current Plan
 
-*   **Update Color Scheme:** Change the header and button colors to maroon.
-*   **Enhance Recommendations:** Modify the "Next Best Action" section to dynamically include relevant market trends.
+*   **Add "Generate Full Report" Button:** Add a button to the "Market Trends" section to allow users to generate a full report.
+*   **Create Report Generation Function:** Create a function to generate and display the full market trend report.
+*   **Style New Elements:** Add styles for the new button and report container.
