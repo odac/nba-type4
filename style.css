@@ -72,6 +72,14 @@ h2 {
     margin-top: 20px;
 }
 
-.recommendation-container i {
-    margin-right: 10px;
+#revenueChart {
+    max-width: 50%;
+}
+
+.recommendation-container .fa-lightbulb {
+    color: #f5b700;
+}
+
+.recommendation-container .fa-comments {
+    color: #007bff;
 }
